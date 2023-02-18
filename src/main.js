@@ -13,17 +13,17 @@ import  { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
 
-  apiKey: "AIzaSyD5gftpE7tNix4FH9H91fNZLcFRCTqaA6Q",
+  apiKey: "非公開",
 
-  authDomain: "pic-memo.firebaseapp.com",
+  authDomain: "非公開",
 
-  projectId: "pic-memo",
+  projectId: "非公開",
 
-  storageBucket: "pic-memo.appspot.com",
+  storageBucket: "非公開",
 
-  messagingSenderId: "1514427417",
+  messagingSenderId: "非公開",
 
-  appId: "1:1514427417:web:59d16ff03d8f120eb08688"
+  appId: "非公開"
 
 };
 
