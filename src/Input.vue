@@ -1,6 +1,6 @@
 <script>
 
-import { ref, uploadBytes } from "firebase/storage";
+import {  getStorage, ref, uploadBytes } from "firebase/storage";
 
     const fileUpload = (e) => {
         const file = e.target.files[0];
@@ -16,13 +16,18 @@ import { ref, uploadBytes } from "firebase/storage";
 
 <template>
   <div>
-      <label>ファイルを選択
+      <form>
           <input
             type="file"
             accept=" .png,  .jpeg,  .jpg,  .bmp,  .gif"
-            @change="fileUpload" />
+            @change="fileUpload"
           />
-      </label>
+          <button
+            type="submit"
+            class="button"
+            >投稿
+          </button>
+      </form>
       
       <!-- <div class="form-name">
                 <p>画像名入力</p>
