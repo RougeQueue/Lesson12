@@ -1,12 +1,6 @@
 <script>
-// import Storage  from "./App.vue";
-// import { getAuth, onAuthStateChanged, updateProfile } from "firebase/auth";
-// import { getDatabase, ref, push, onValue } from "firebase/database";
-import { ref, uploadBytes } from "firebase/storage";
 
-// export default {
-// name: "FileInput",
-// }
+import { ref, uploadBytes } from "firebase/storage";
 
     const fileUpload = (e) => {
         const file = e.target.files[0];
@@ -28,9 +22,8 @@ import { ref, uploadBytes } from "firebase/storage";
             accept=" .png,  .jpeg,  .jpg,  .bmp,  .gif"
             @change="fileUpload" />
           />
-          <img v-if="img_url" :src="img_url" />
-          <!-- <input type="file"  nmae="imageURL"  id="post"  ref="preview" @change="uploadFile"> -->
       </label>
+      
       <!-- <div class="form-name">
                 <p>画像名入力</p>
                 <input type="text" name="name" placeholder="画像名を入力してください" v-model="name">
@@ -64,17 +57,5 @@ import { ref, uploadBytes } from "firebase/storage";
         font-size: 14px;
         margin-left: 20px;
     }
-    .reset_file_ico {
-        padding: 4px;
-        font-size: 12px;
-        border: 1px solid #c6c6c6;
-        border-radius: 10px;
-    }
-    .reset_file_ico:hover {
-        cursor: pointer;
-        border-color: #5f6674;
-    }
-    #error {
-        color: red;
-    }
+   
 </style>
