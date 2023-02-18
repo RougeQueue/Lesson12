@@ -20,11 +20,11 @@ import {  getStorage, ref, uploadBytes } from "firebase/storage";
           <input
             type="file"
             accept=" .png,  .jpeg,  .jpg,  .bmp,  .gif"
-            @change="fileUpload"
           />
           <button
             type="submit"
             class="button"
+            @change="fileUpload"
             >投稿
           </button>
       </form>
