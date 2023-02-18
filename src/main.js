@@ -4,7 +4,6 @@ import App from './App.vue';
 // Import the functions you need from the SDKs you need
 
 import { initializeApp } from "firebase/app";
-import  { getStorage } from "firebase/storage";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -13,23 +12,23 @@ import  { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
 
-  apiKey: "非公開",
+  apiKey: "AIzaSyD5gftpE7tNix4FH9H91fNZLcFRCTqaA6Q",
 
-  authDomain: "非公開",
+  authDomain: "pic-memo.firebaseapp.com",
 
-  projectId: "非公開",
+  databaseURL: "https://pic-memo-default-rtdb.firebaseio.com",
 
-  storageBucket: "非公開",
+  projectId: "pic-memo",
 
-  messagingSenderId: "非公開",
+  storageBucket: "pic-memo.appspot.com",
 
-  appId: "非公開"
+  messagingSenderId: "1514427417",
+
+  appId: "1:1514427417:web:59d16ff03d8f120eb08688"
 
 };
 
 // Initialize Firebase
 initializeApp(firebaseConfig);
-const storage = getStorage(firebaseApp);
-// export default storage;
 
 createApp(App).mount('#app');
